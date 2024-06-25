@@ -1,0 +1,401 @@
+@charset"utf-8";
+
+/*body css*/
+body
+{
+	background-image:url("image/cost-of-care-featured.webp");
+	background-size:cover;
+	font-family: Verdana, sans-serif;
+	margin: 0;
+}
+.header {
+	background: linear-gradient(#3d251f, #80471C);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-bottom-left-radius: 60px;
+	padding: 20px 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	z-index: 100000;
+}
+
+.header.sticky {
+	padding: 5px 100px;
+	background: #000;
+}
+
+.header.sticky .logo,
+.header.sticky ul li a {
+	color: white;
+}
+
+.header .navbar {
+	display: flex;
+	align-items: center;
+}
+
+.header .navbar .logo {
+	font-size: 36px;
+	font-weight: bold;
+	color: white;
+	margin-right: 20px;
+}
+
+.header .navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: flex;
+}
+
+.header .navbar ul li {
+	margin-left: 15px;
+	font-size: 20px;
+}
+
+.header .navbar ul li a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	font-family: Arial;
+	font-weight: bold;
+	padding: 10px;
+	transition: 0.6s;
+	text-align: center;
+}
+.header .navbar ul li a:hover {
+	
+	background-color:#C5C6D0;
+}
+
+fieldset{
+	color:white;
+	width:90%;
+	padding:10px;
+	margin:10px;
+	border-radius:20px;
+	background-color:rgba(0,0,0,0.4);
+	
+}
+
+div.colm
+{
+	border:2px solid black;
+	float:left;
+	width:30%;
+	padding:10px;
+	margin:10px;
+	height:400px;
+
+	height:400px;
+	overflow-y:scroll;
+}
+div.main:after{
+	content:"";
+	display:table;
+	clear:both;
+}
+img.contactlink
+{
+	width:30px;
+	height:30p;
+}
+
+div.formdiv
+{
+	border:1px solid black;
+	text-align:center;
+}
+button
+{
+	background-color:red;
+}
+/*taken  by font awesome website */
+form.end {
+  width:100%;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  border: 1px solid white;
+  
+}
+
+.fa-solid.fa-envelope {
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top:6px;
+}
+
+form.end input {
+  width: 50%;
+  background:transparent;
+  margin-right: 30px;
+  color: #ccc;
+  border: 0;
+  outline: none;
+  margin-right:-20px;
+}
+
+form.end button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  margin-top:6px;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #00093c;
+  transition: background-color 0.3s ease;
+}
+
+form.end button:hover {
+  background-color:#B2D3C2;
+}
+
+form.end button.fas {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.fab {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+  
+}
+
+.fab:hover {
+  background-color: #B2D3C2;
+}
+
+.col .fab {
+  display: inline-block;
+}
+
+hr
+{
+	width:90%;
+	border:0;
+	border-bottom:1px solid #ccc;
+	margin:20px auto;
+}	
+
+.copyright
+{
+	text-align:center;
+	
+}
+.underline
+{
+	width:100%;
+	height:5px;
+	background:#767676;
+	border-radius:3px;
+	position:absolute;
+	top:25px;
+	left:0;
+	overflow:hidden;
+}
+.underline span
+{
+	width:15px;
+	height:100%;
+	background:#fff;
+	border-radius:3px;
+	position:absolute;
+	top:0;
+	left:10px;
+	animation:moving 2s linear infinite;
+}
+
+@keyframes moving
+{
+	0%
+	{
+	left: -20px;
+	}
+	100%
+	{
+	left: 100%;
+	}
+}
+@media (max-width:700px)
+{
+	footer
+	{
+		bottom:unset;
+	}
+	.col {
+	display:flex;
+	}
+
+	
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+footer {
+	
+	width: 100%;
+	position:bottom;
+	background: linear-gradient(#3d251e, #80471C);
+	color: #fff;
+	padding: 10px 0 10px 0;
+	border-top-left-radius: 125px;
+	line-height: 20px;
+	margin-top:100px;
+	
+}
+
+.row {
+	width: 85%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.col {
+	flex-basis: 25%;
+	padding: 10px;
+}
+
+.logo {
+	display: flex;
+	margin-bottom: 30px;
+
+}
+
+.col h3 {
+	width:fit-content;
+	margin-bottom: 40px;
+	position: relative;
+	
+}
+
+.email {
+	width: fit-content;
+	border-bottom: 1px solid #ccc;
+	margin: 20px 0;
+}
+
+ul li {
+	list-style: none;
+	margin-bottom:12px;
+	
+}
+
+ul li a {
+	text-decoration: none;
+	color: white;
+	
+	
+}
+.form1{
+
+	background-color:rgba(0,0,0,0.4);
+	width:40%;
+	padding: 10px;
+	font-size:17px;
+	border-radius:10px;
+	box-shadow:2px 2px 15px rgba(0,0,0,0.3);
+	color:#fff;
+	margin:40px;
+
+}
+.button{
+
+	width:100px;
+	padding:5px;
+	font-size:16px;
+	border-radius:3px;
+	background-color:rgba(255,50,0,0.8); 
+	color:#fff;
+	cursor:pointer;
+	border:1px solid rgba(255,255,255,0.3);
+	box-shadow:1px 1px 5px rgba(0,0,0,0.3);
+}
+
+
+
+.button:hover {
+
+	background-color:rgba(50, 106, 230, 1);
+
+}
+
+button{
+	width:150px;
+	padding:5px;
+	font-size:16px;
+	border-radius:3px;
+	background-color:rgba(255,50,0,0.8); 
+	color:#fff;
+	cursor:pointer;
+	border:1px solid rgba(255,255,255,0.3);
+	box-shadow:1px 1px 5px rgba(0,0,0,0.3);
+	
+}
+
+input#name,#email,#msg,#pwd{
+
+	width:350px;
+	border:1px solid;
+	border-radius:3px;
+	outline:0;
+	padding:7px;
+	
+
+}
+
+#logh{
+	text-align: Center;
+	margin:0;
+	font-size:4em;
+	color:#4d3126;
+	font-family:Times new roman;
+}
+
+label{
+
+    font-family: sans-serif;
+    font-style: big;
+    font-size:25px;
+	
+
+}
+
+#log{
+	
+	text-align: Center;
+	margin:0;
+	font-size:2em;
+	color:black;
+	font-family:Times new roman;
+}
+#reg{
+	background-color:rgb(78,236,170);
+	
+}
